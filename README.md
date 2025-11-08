@@ -17,3 +17,6 @@ QGIS (https://qgis.org/)
 
 
 ## 🔨 How to Recreate 🔨 ##
+Note: Assumes you have QGIS downloaded
+
+Data requirements:
