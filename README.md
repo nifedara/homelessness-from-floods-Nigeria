@@ -55,7 +55,15 @@ https://www.earthdata.nasa.gov/data/catalog/sedac-ciesin-sedac-pend-gdis-1.00
 - This dataset has the disaster impact but no coordinates
 - Import this data as (Delimited Text - with No geometry). This loads it as a table only
 - This dataset has a field that is the same as the global dataset, which is the disaster number (disasterno) field. This field is called DisNo in this dataset and disasterno in the global set, but both hold the same value
-
+- The disaster number field of this dataset also varies in that it carries the country code (ISO3) as a suffix to the actual disaster number
+- Use the `Left` function in `Field calculator` to remove the suffix `NGA`, making a new field `disasterno` that rhymes with the other dataset
+ 
 #### - JOIN both datasets: ####
-- We will join both datasets by field attribute
-  
+- We will join both datasets by field attribute, which can be found in the Processing Toolbar
+- Join them on the common field, `disasterno`
+- Now, we have one table that has all we need
+
+#### - Handle duplicates: ####
+- Using `Delete duplicates by attribute`, remove records with duplicate `disasterno`, as it can skew the result
+
+#### - Symbology: ####
