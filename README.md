@@ -19,4 +19,9 @@ QGIS (https://qgis.org/)
 ## 🔨 How to Recreate 🔨 ##
 Note: Assumes you have QGIS downloaded
 
-Data requirements:
+- Get the data required:
+1. Download the 10m Admin_0_countries vector from:
+
+```
+https://www.naturalearthdata.com/downloads/10m-cultural-vectors/
+```
