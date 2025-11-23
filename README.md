@@ -66,4 +66,8 @@ https://www.earthdata.nasa.gov/data/catalog/sedac-ciesin-sedac-pend-gdis-1.00
 #### - Handle duplicates: ####
 - Using `Delete duplicates by attribute`, remove records with duplicate `disasterno`, as it can skew the result
 
-#### - Symbology: ####
+#### - Symbology and Labelling: ####
+- To help clearly represent the values being communicated, the number of people rendered homeless by floods, use appropriate symbols and finally label for clarity
+
+#### - Finally: ####
+- In the print layout, add your map, legend, and design as needed
